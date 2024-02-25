@@ -1,0 +1,464 @@
+/*here lets put the universal selector */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+/*section 1 styles */
+
+#section1{
+  height: 70vh;
+  width: 100%;
+}
+
+   /*header styles */
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10px;
+  padding: 0 3rem 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #ddd;
+}
+
+/*header left styles */
+
+.header-left{
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.header-left img{
+  height: 60px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.header-left img:hover{
+  box-shadow: 0 0 4px #ddd, 0 0 8px #ddd, 0 0 12px;
+}
+
+/*header middle styles */
+
+.header-middle{
+  display: flex;
+  align-items: center;
+}
+.header-middle ul a{
+  position: relative;
+}
+.header-middle a{
+  text-decoration: none;
+  font-size: 19px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-left: 2rem;
+  transition: 0.5s ease;
+}
+.header-middle a:hover{
+  color: #009688;
+}
+.header-middle a::after{
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  transition: 0.5s ease;
+}
+.header-middle a:hover::after{
+  width: 100%;
+}
+
+/*header right styles */
+
+.header-right{
+  display: flex;
+  align-items: center;
+}
+.header-right img{
+  height: 36px;
+  transition: 0.5s ease;
+  border-radius: 18px;
+  margin-left: 2rem;
+ 
+}
+.header-right img:hover{
+  box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px;
+}
+
+/*hamburger menu */
+.menu{
+  display: none;
+
+}
+.menu img{
+  height: 30px;
+  cursor: pointer;
+
+
+  /*here we hide the menu button and show it in small screen devices */
+
+}
+.close img{
+  height: 30px;
+  cursor: pointer;
+  
+}
+.close{
+  display: none;
+}
+
+/* body styles for section 1 */
+
+.container{
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), #ddd), url(https://c0.wallpaperflare.com/preview/81/87/653/man-working-camera-photography.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 7rem;
+}
+.contain{
+  padding-top: 50px;
+  text-align: center;
+}
+.contain h2{
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.contain h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.contain p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 30px;
+}
+.contain button{
+  padding: 10px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-style: italic;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 4px #ddd, 0 0 8px #ddd, 0 0 12px;
+  background: transparent;
+  border-radius: 10px;
+  margin: 1rem 0;
+  transition: 0.5s ease;
+}
+.contain button:hover{
+  box-shadow: 0 0 4px #009688, 0 0 8px #ddd, 0 0 12px;
+  color: #fff;
+}
+
+/*section 2 styles*/
+
+#section2{
+  height: 50vh;
+  width: 100%;
+}
+.line{
+  text-align: center;
+  padding-top: 3rem;
+}
+.line h1{
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: gray;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.div-img{
+  border-bottom: 1px solid #ddd;
+  height: auto;
+  cursor: pointer;
+}
+.div-img img{
+  height: 35px;
+}
+.div-img h1{
+  letter-spacing: 1px;
+  color: #333;
+  margin: 1rem 0rem;
+  font-style: italic;
+}
+
+/* let's make this section part of the website responsive */
+
+/*section 3 styles*/
+
+#section3{
+  height: auto;
+  width: 100%;
+  background-color: #efefef;
+  padding-bottom: 1rem;
+}
+.line p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: gray;
+}
+.work{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  padding: 2rem;
+}
+.work-div{
+  box-shadow: 0 0 4px #ddd, 0 0 8px #ddd, 0 0 12px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0 0 0;
+  transition: 0.5s ease;
+}
+.work-div:hover{
+  transform: translateY(-0.5rem);
+}
+.work-div img{
+  height: 300px;
+  width: 100%; /*here we wonna make our image to take 100% width within its container*/
+}
+.img-work .img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+.img-work{
+  box-shadow: 0 0 2px #ddd, 0 0 6px #ddd, 0 0 8px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.work-div p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: gray;
+}
+.work-div h1{
+  letter-spacing: 1px;
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+/*let's make this section responsive */
+
+
+/*section 4 styles*/
+
+#section4{
+  height: auto;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+/* here let's make our website responsive */
+
+/*section 5 styles*/
+
+#section5{
+  height: auto;
+  width: 100%;
+  background-color: #36464dff;
+  padding: 1rem 0;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  padding: 2rem;
+}
+.social-links h1{
+  letter-spacing: 1px;
+  color: #ddd;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+.social-links p{
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.social-links p:hover{
+  color: #009688;
+}
+.copyright{
+  text-align: center;
+}
+.copyright p{
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*let's make the footer responsive*/
+
+@media screen and (max-width: 770px)
+{
+  /*section 1 styles */
+
+#section1{
+  height: auto;
+}
+
+/*header styles */
+
+.header{
+  padding: 0 1rem 0.5rem 0.5rem;
+}
+
+.header-middle a{
+  font-size: 16px;
+  margin-left: 1rem;
+
+}
+
+/*here we gonna put a hamburger menu hide it on larg screens and display it on smaller screens */
+
+.close{
+  display: initial;
+  position: absolute;
+  top: 2%;
+}
+.menu{
+  display: initial;
+}
+.header-right{
+  background-color: #ddd;
+  position: absolute;
+  right: -300px; /*here lets hide the navbar and we reveal it any time we click on the menu*/
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  height: 100vh;
+  transition: 1s ease-in-out;
+}
+.header-right ul{
+  display: flex;
+  flex-direction: column;
+}
+.header-right img{
+  height: 30px;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}
+
+/* body styles for section 1 */
+
+.container{
+  height: auto;
+
+}
+.contain{
+  padding-top: 100px;
+}
+.contain h2{
+  font-size: 18px;
+}
+.contain h1{
+  font-size: 30px;
+}
+.contain p{
+  font-size: 16px;
+}
+
+/*section 2 styles */
+
+.div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 1rem 0 0 2rem;
+  
+}
+
+#section2{
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+/* let's move to section 3 */
+
+/*section 3 styles */
+
+.work{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+.work-div img{
+  height: 200px;
+  width: 100%; /*here we wonna make our image to take 100% width within its container*/
+}
+
+/* section 4 styles*/
+
+#section4{
+  height: auto;
+}
+
+/* section 5 styles*/
+
+#section5{
+  height: auto;
+  width: 100%;
+  background-color: #36464dff;
+  padding: 1rem 0;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+
+}
